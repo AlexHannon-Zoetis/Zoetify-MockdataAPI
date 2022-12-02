@@ -1,0 +1,997 @@
+{
+"Asset":
+	[
+		{
+			"Primary Title": "Financial Report"
+			,"Title Aliases": ["Compass", "Finance Dashboard"]
+			,"DataAssetType": "Power BI Report"
+			,"Description": "A generic Power BI report design to achieve XYZ for global FP&A"
+			,"Link": {
+				"Type":"www.fakeurlals1324fdkjas1234.com",
+				"Connection":"URL"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Data Cube"
+				,"Relationship": "input dataset"
+				}
+			
+			,"Data Custodian": "Tom Cat"
+			,"Data Generator": "Jerry Mouse"
+			,"Data Consumer": "Bugs Bunny"
+		}
+		,
+		{
+			"Primary Title": "Finance Data Cube"
+			,"Title Aliases": "Finance Reporting data"
+			,"DataAssetType": "SSL Data Cube"
+			,"Description": "A data cube used to report downstream reports"
+			,"Link": {
+				"Type":"database server/schema",
+				"Connection":"DB Credentials"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Financial Report"
+				,"Relationship": "output report"
+				}
+			
+			,"Data Custodian": "Jerry Mouse"
+			,"Data Generator": "Tom Cat"
+			,"Data Consumer": "Mr. Burns"
+		}
+		,
+		{
+			"Primary Title": "Finance Data Cube"
+			,"Title Aliases": "Finance Reporting data"
+			,"DataAssetType": "SSL Data Cube"
+			,"Description": "A data cube used to report downstream reports"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Financial Report"
+				,"Relationship": "output report"
+				}
+			
+			,"Data Custodian": "Jerry Mouse"
+			,"Data Generator": "Tom Cat"
+			,"Data Consumer": "Mr. Burns"
+		}
+		,
+		{
+			"Primary Title": "Finance Forecast"
+			,"Title Aliases": "Finance Operational Metrics"
+			,"DataAssetType": "SQL Server Table"
+			,"Description": "A table within a financial database with the latest forecast information"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": "Alex's Resource Group"
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Plan"
+				,"Relationship": "Table in same schema"
+				}
+			,"Data Custodian": "Darth Vader"
+			,"Data Generator": "Mickey Mouse"
+			,"Data Consumer": "Tony Stark"
+		}
+		,
+		{
+			"Primary Title": "Finance Plan"
+			,"Title Aliases": "Finance Plan Metrics"
+			,"DataAssetType": "SQL Server Table"
+			,"Description": "A table within a financial database with the latest plan information"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": "Alex's Resource Group"
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Forecast"
+				,"Relationship": "Table in same schema"
+				}
+			,"Data Custodian": "Darth Vader"
+			,"Data Generator": "Mickey Mouse"
+			,"Data Consumer": "Tony Stark"
+		}	
+		,
+		{
+			"Primary Title": "early stage molecule stability test cn34"
+			,"Title Aliases": ["cn34 results","stability test data cn34"]
+			,"DataAssetType": "Parquet"
+			,"Description": "Stability test results for cn34"
+			,"Link": {
+				"Type":"Resource Group:Resource",
+				"Connection":"Azure Blob Storage"
+			}
+			,"DataAssetCollections": "CN34"
+			,"Communites": "VMRD"
+			,"Related to" : 
+				{
+				"Name": "CN34 Peak Data"
+				,"Relationship": "Molecule"
+				}
+			,"Data Custodian": "Marge Simpson"
+			,"Data Generator": "Homer J"
+			,"Data Consumer": "Ned Flanders"
+		}
+		,
+		{
+			"Primary Title": "CN34 Peak Data"
+			,"Title Aliases": ["cn34 peaks","HPLC cn34","cn34 chromatography"]
+			,"DataAssetType": "Parquet"
+			,"Description": "HPLC test results for cn34"
+			,"Link": {
+				"Type":"Resource Group:Resource",
+				"Connection":"Azure Blob Storage"
+			}
+			,"DataAssetCollections": "CN34"
+			,"Communites": "VMRD"
+			,"Related to" : 
+				{
+				"Name": "early stage molecule stability test cn34"
+				,"Relationship": "Molecule"
+				}
+			,"Data Custodian": "Marge Simpson"
+			,"Data Generator": "Homer J"
+			,"Data Consumer": "Ned Flanders"
+		}	
+		,
+		{
+			"Primary Title": "BT-900"
+			,"Title Aliases": ["Batch Report","Batch Output Processing"]
+			,"DataAssetType": "SAP Report"
+			,"Description": "An SAP report detailing batches produced across all plants"
+			,"Link": {
+				"Type":"SAP Report Code",
+				"Connection":"SAP Report"
+			}
+			,"DataAssetCollections": "GMS SAP"
+			,"Communites": "GMS"
+			,"Related to" : 
+				{
+				"Name": "Batch Processing Table"
+				,"Relationship": "Same Source"
+				}
+			,"Data Custodian": "Tony Stark"
+			,"Data Generator": "Bruce Banner"
+			,"Data Consumer": "Peter Parker"
+		}
+		,
+		{
+			"Primary Title": "Batch Processing Table"
+			,"Title Aliases": ["Batch Report","Batch Output Processing"]
+			,"DataAssetType": "SQL Server Table"
+			,"Description": "An SAP table detailing batches produced across all plants"
+			,"Link": {
+				"Type":"SAP Report Code",
+				"Connection":"SAP Report"
+			}
+			,"DataAssetCollections": "GMS SAP"
+			,"Communites": "GMS"
+			,"Related to" : 
+				{
+				"Name": "BT-900"
+				,"Relationship": "Same Source"
+				}
+			,"Data Custodian": "Thor Odenson"
+			,"Data Generator": "Bruce Banner"
+			,"Data Consumer": "Peter Parker"
+		}	
+		,
+		{
+			"Primary Title": "BatchTable_tx900_23"
+			,"Title Aliases": ""
+			,"DataAssetType": "SAP Table"
+			,"Description": "An SAP report detailing batches produced across all plants"
+			,"Link": {
+				"Type":"SAP Report Code",
+				"Connection":"SAP Report"
+			}
+			,"DataAssetCollections": "GMS SAP"
+			,"Communites": "GMS"
+			,"Related to" : 
+				[{
+				"Name": "Batch Processing Table"
+				,"Relationship": "Output"
+				},
+				{
+				"Name": "BT-900"
+				,"Relationship": "Output"
+				}]
+			,"Data Custodian": "Bruce Wayne"
+			,"Data Generator": "Clark Kent"
+			,"Data Consumer": "Bruce Banner"
+		}	
+	]
+,
+"Communities":
+	[
+	{
+		"CommunityName": "Finance",
+		,"Data Asset(s)":  
+			[{
+			"Primary Title": "Financial Report"
+			,"Title Aliases": ["Compass", "Finance Dashboard"]
+			,"DataAssetType": "Power BI Report"
+			,"Description": "A generic Power BI report design to achieve XYZ for global FP&A"
+			,"Link": {
+				"Type":"www.fakeurlals1324fdkjas1234.com",
+				"Connection":"URL"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Data Cube"
+				,"Relationship": "input dataset"
+				}
+			
+			,"Data Custodian": "Tom Cat"
+			,"Data Generator": "Jerry Mouse"
+			,"Data Consumer": "Bugs Bunny"
+		}
+		,
+		{
+			"Primary Title": "Finance Data Cube"
+			,"Title Aliases": "Finance Reporting data"
+			,"DataAssetType": "SSL Data Cube"
+			,"Description": "A data cube used to report downstream reports"
+			,"Link": {
+				"Type":"database server/schema",
+				"Connection":"DB Credentials"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Financial Report"
+				,"Relationship": "output report"
+				}
+			
+			,"Data Custodian": "Jerry Mouse"
+			,"Data Generator": "Tom Cat"
+			,"Data Consumer": "Mr. Burns"
+		}
+		,
+		{
+			"Primary Title": "Finance Data Cube"
+			,"Title Aliases": "Finance Reporting data"
+			,"DataAssetType": "SSL Data Cube"
+			,"Description": "A data cube used to report downstream reports"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Financial Report"
+				,"Relationship": "output report"
+				}
+			
+			,"Data Custodian": "Jerry Mouse"
+			,"Data Generator": "Tom Cat"
+			,"Data Consumer": "Mr. Burns"
+		}
+		,
+		{
+			"Primary Title": "Finance Forecast"
+			,"Title Aliases": "Finance Operational Metrics"
+			,"DataAssetType": "SQL Server Table"
+			,"Description": "A table within a financial database with the latest forecast information"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": "Alex's Resource Group"
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Plan"
+				,"Relationship": "Table in same schema"
+				}
+			,"Data Custodian": "Darth Vader"
+			,"Data Generator": "Mickey Mouse"
+			,"Data Consumer": "Tony Stark"
+		}
+		,
+		{
+			"Primary Title": "Finance Plan"
+			,"Title Aliases": "Finance Plan Metrics"
+			,"DataAssetType": "SQL Server Table"
+			,"Description": "A table within a financial database with the latest plan information"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": "Alex's Resource Group"
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Forecast"
+				,"Relationship": "Table in same schema"
+				}
+			,"Data Custodian": "Darth Vader"
+			,"Data Generator": "Mickey Mouse"
+			,"Data Consumer": "Tony Stark"
+		}
+		]
+		,"Users": 
+		[
+			{
+				
+				"User": "Alex Hannon",
+				,"Role": "Owner"
+			}
+			,
+			{
+				
+				"User": "Tony Stark",
+				,"Role": "Member"
+			}
+			,
+			{
+				
+				"User": "Mickey Mouse",
+				,"Role": "Member"
+			}
+			,
+			{
+				
+				"User": "Darth Vader",
+				,"Role": "Member"
+			}			
+		]
+		,"Purpose": "Community designed to collate and allow collaboration on all finance resources"
+		,"Messages": 
+			[
+				{
+					"User": "Alex Hannon",
+					"Type": "Annoucement",
+					"Datetime": "2022-11-30T18:25:43.511Z" ,
+					"Subject": "Welcome to the finance community",
+					"Body":"I'd like to thank you all for entering the finance community and hope well all..."
+				}
+				,
+				{
+					"User": "Darth Vader",
+					"Type": "Query",
+					"Datetime": "2022-11-29T18:25:43.511Z" ,
+					"Subject": "Deathstar Blueprints",
+					"Body":"I've left them around somewhere but can't find them. Has anyone seen them?"
+				}
+			]
+		,"Data Asset Collection" :
+		[
+			{
+			"Data Asset Collection Name": "Alex's Resource Group"
+			,"Data Asset Owner Name": "Alex Hannon" 
+			}
+			,
+			{
+			"Data Asset Collection Name": "Global FP&A main resources"
+			,"Data Asset Owner Name": "Tom Cat" 
+			}			
+		]
+	}
+	,
+	{
+		"CommunityName": "VMRD",
+		,"Data Asset(s)":  
+			[
+			{
+				"Primary Title": "early stage molecule stability test cn34"
+				,"Title Aliases": ["cn34 results","stability test data cn34"]
+				,"DataAssetType": "Parquet"
+				,"Description": "Stability test results for cn34"
+				,"Link": {
+					"Type":"Resource Group:Resource",
+					"Connection":"Azure Blob Storage"
+				}
+				,"DataAssetCollections": "CN34"
+				,"Communites": "VMRD"
+				,"Related to" : 
+					{
+					"Name": "CN34 Peak Data"
+					,"Relationship": "Molecule"
+					}
+				,"Data Custodian": "Marge Simpson"
+				,"Data Generator": "Homer J"
+				,"Data Consumer": "Ned Flanders"
+			}
+			,
+			{
+				"Primary Title": "CN34 Peak Data"
+				,"Title Aliases": ["cn34 peaks","HPLC cn34","cn34 chromatography"]
+				,"DataAssetType": "Parquet"
+				,"Description": "HPLC test results for cn34"
+				,"Link": {
+					"Type":"Resource Group:Resource",
+					"Connection":"Azure Blob Storage"
+				}
+				,"DataAssetCollections": "CN34"
+				,"Communites": "VMRD"
+				,"Related to" : 
+					{
+					"Name": "early stage molecule stability test cn34"
+					,"Relationship": "Molecule"
+					}
+				,"Data Custodian": "Marge Simpson"
+				,"Data Generator": "Homer J"
+				,"Data Consumer": "Ned Flanders"
+			}	
+			]
+		,"Users": 
+		[
+		{
+			"User": "Ned Flanders",
+			,"Role": "Owner"
+		}
+			,
+		{	
+			"User": "Homer J",
+			,"Role": "Member"
+		}
+		]
+		,"Purpose": "A community for VMRD to collabore"
+		,"Messages": 
+			[
+				{
+					"User": "Homer J",
+					"Type": "Annoucement",
+					"Datetime": "2022-11-30T18:25:43.511Z" ,
+					"Subject": "Welcome to the VMRD community",
+					"Body":"I'd like to thank you all for entering the VMRD community and hope well all..."
+				}
+				,
+				{
+					"User": "Ned Flanders",
+					"Type": "Query",
+					"Datetime": "2022-11-29T18:25:43.511Z" ,
+					"Subject": "Okaly dokaly",
+					"Body":"Can I get my lawnmower back?"
+				}
+			]
+		,"Data Asset Collection" :
+		{
+		"Data Asset Collection Name": "CN34"
+		,"Data Asset Owner Name": "Ned Flanders"
+		} 
+	}
+	,
+		{
+		"CommunityName": "GMS",
+		,"Data Asset(s)":  
+		[
+			{
+				"Primary Title": "BT-900"
+				,"Title Aliases": ["Batch Report","Batch Output Processing"]
+				,"DataAssetType": "SAP Report"
+				,"Description": "An SAP report detailing batches produced across all plants"
+				,"Link": {
+					"Type":"SAP Report Code",
+					"Connection":"SAP Report"
+				}
+				,"DataAssetCollections": "GMS SAP"
+				,"Communites": "GMS"
+				,"Related to" : 
+					{
+					"Name": "Batch Processing Table"
+					,"Relationship": "Same Source"
+					}
+				,"Data Custodian": "Tony Stark"
+				,"Data Generator": "Bruce Banner"
+				,"Data Consumer": "Peter Parker"
+			}
+			,
+			{
+				"Primary Title": "Batch Processing Table"
+				,"Title Aliases": ["Batch Report","Batch Output Processing"]
+				,"DataAssetType": "SQL Server Table"
+				,"Description": "An SAP table detailing batches produced across all plants"
+				,"Link": {
+					"Type":"SAP Report Code",
+					"Connection":"SAP Report"
+				}
+				,"DataAssetCollections": "GMS SAP"
+				,"Communites": "GMS"
+				,"Related to" : 
+					{
+					"Name": "BT-900"
+					,"Relationship": "Same Source"
+					}
+				,"Data Custodian": "Thor Odenson"
+				,"Data Generator": "Bruce Banner"
+				,"Data Consumer": "Peter Parker"
+			}	
+			,
+			{
+				"Primary Title": "BatchTable_tx900_23"
+				,"Title Aliases": ""
+				,"DataAssetType": "SAP Table"
+				,"Description": "An SAP report detailing batches produced across all plants"
+				,"Link": {
+					"Type":"SAP Report Code",
+					"Connection":"SAP Report"
+				}
+				,"DataAssetCollections": "GMS SAP"
+				,"Communites": "GMS"
+				,"Related to" : 
+					[{
+					"Name": "Batch Processing Table"
+					,"Relationship": "Output"
+					},
+					{
+					"Name": "BT-900"
+					,"Relationship": "Output"
+					}]
+				,"Data Custodian": "Bruce Wayne"
+				,"Data Generator": "Clark Kent"
+				,"Data Consumer": "Bruce Banner"
+			}	
+		]
+		,"Users": 
+		[	
+			{
+				"User": "Bruce Wayne",
+				,"Role": "Owner"
+			}
+			,
+			{
+				"User": "Bruce Banner",
+				,"Role": "Member"
+			}
+		]
+		,"Purpose": "A GMS group to assist with collaboration across the org."
+		,"Messages": 
+			[
+				{
+					"User": "Bruce Banner",
+					"Type": "Annoucement",
+					"Datetime": "2022-11-30T18:25:43.511Z" ,
+					"Subject": "Welcome to the GMS community",
+					"Body":"I'd like to thank you all for entering the GMS community and hope well all..."
+				}
+				,
+				{
+					"User": "Bruce Wayne",
+					"Type": "Query",
+					"Datetime": "2022-11-29T18:25:43.511Z" ,
+					"Subject": "Marta",
+					"Body":"My review of Zoro - worst movie ever!!!"
+				}
+			]
+		,"Data Asset Collection" :
+		{
+		"Data Asset Collection Name": "GMS SAP"
+		,"Data Asset Owner Name": "Bruce Banner" 
+		} 
+	}
+	]
+,
+"Favourites" :
+	{
+	"User": "Test User"
+	,"Data Asset": 
+		[
+		{
+			"Primary Title": "Financial Report"
+			,"Title Aliases": ["Compass", "Finance Dashboard"]
+			,"DataAssetType": "Power BI Report"
+			,"Description": "A generic Power BI report design to achieve XYZ for global FP&A"
+			,"Link": {
+				"Type":"www.fakeurlals1324fdkjas1234.com",
+				"Connection":"URL"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Data Cube"
+				,"Relationship": "input dataset"
+				}
+			
+			,"Data Custodian": "Tom Cat"
+			,"Data Generator": "Jerry Mouse"
+			,"Data Consumer": "Bugs Bunny"
+		}
+		,
+		{
+			"Primary Title": "Finance Forecast"
+			,"Title Aliases": "Finance Operational Metrics"
+			,"DataAssetType": "SQL Server Table"
+			,"Description": "A table within a financial database with the latest forecast information"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": "Alex's Resource Group"
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Plan"
+				,"Relationship": "Table in same schema"
+				}
+			,"Data Custodian": "Darth Vader"
+			,"Data Generator": "Mickey Mouse"
+			,"Data Consumer": "Tony Stark"
+		}
+		,
+		{
+			"Primary Title": "Finance Plan"
+			,"Title Aliases": "Finance Plan Metrics"
+			,"DataAssetType": "SQL Server Table"
+			,"Description": "A table within a financial database with the latest plan information"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": "Alex's Resource Group"
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Forecast"
+				,"Relationship": "Table in same schema"
+				}
+			,"Data Custodian": "Darth Vader"
+			,"Data Generator": "Mickey Mouse"
+			,"Data Consumer": "Tony Stark"
+		}
+		,
+		{
+			"Primary Title": "Batch Processing Table"
+			,"Title Aliases": ["Batch Report","Batch Output Processing"]
+			,"DataAssetType": "SQL Server Table"
+			,"Description": "An SAP table detailing batches produced across all plants"
+			,"Link": {
+				"Type":"SAP Report Code",
+				"Connection":"SAP Report"
+			}
+			,"DataAssetCollections": "GMS SAP"
+			,"Communites": "GMS"
+			,"Related to" : 
+				{
+				"Name": "BT-900"
+				,"Relationship": "Same Source"
+				}
+			,"Data Custodian": "Thor Odenson"
+			,"Data Generator": "Bruce Banner"
+			,"Data Consumer": "Peter Parker"
+		}	
+		]	
+	}
+,
+"Data_Asset_Collection" :
+	[
+	{
+	"Data Asset Collection Name": "Alex's Resource Group"
+	,"Data Asset Owner Name": "Alex Hannon"
+	,"Data Asset Collection Purpose": "Collect a series of data assets together for finance"
+	,"Data Asset(s)":  
+		[
+			{
+			"Primary Title": "Financial Report"
+			,"Title Aliases": ["Compass", "Finance Dashboard"]
+			,"DataAssetType": "Power BI Report"
+			,"Description": "A generic Power BI report design to achieve XYZ for global FP&A"
+			,"Link": {
+				"Type":"www.fakeurlals1324fdkjas1234.com",
+				"Connection":"URL"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Data Cube"
+				,"Relationship": "input dataset"
+				}
+			,"Data Custodian": "Tom Cat"
+			,"Data Generator": "Jerry Mouse"
+			,"Data Consumer": "Bugs Bunny"
+			}
+			,
+			{
+			"Primary Title": "Finance Data Cube"
+			,"Title Aliases": "Finance Reporting data"
+			,"DataAssetType": "SSL Data Cube"
+			,"Description": "A data cube used to report downstream reports"
+			,"Link": {
+				"Type":"database server/schema",
+				"Connection":"DB Credentials"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Financial Report"
+				,"Relationship": "output report"
+				}
+			
+			,"Data Custodian": "Jerry Mouse"
+			,"Data Generator": "Tom Cat"
+			,"Data Consumer": "Mr. Burns"
+			}
+			,
+			{
+			"Primary Title": "Finance Data Cube"
+			,"Title Aliases": "Finance Reporting data"
+			,"DataAssetType": "SSL Data Cube"
+			,"Description": "A data cube used to report downstream reports"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Financial Report"
+				,"Relationship": "output report"
+				}
+			
+			,"Data Custodian": "Jerry Mouse"
+			,"Data Generator": "Tom Cat"
+			,"Data Consumer": "Mr. Burns"
+			}
+			,
+			{
+			"Primary Title": "Finance Forecast"
+			,"Title Aliases": "Finance Operational Metrics"
+			,"DataAssetType": "SQL Server Table"
+			,"Description": "A table within a financial database with the latest forecast information"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": "Alex's Resource Group"
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Plan"
+				,"Relationship": "Table in same schema"
+				}
+			,"Data Custodian": "Darth Vader"
+			,"Data Generator": "Mickey Mouse"
+			,"Data Consumer": "Tony Stark"
+			}
+			,
+			{
+			"Primary Title": "Finance Plan"
+			,"Title Aliases": "Finance Plan Metrics"
+			,"DataAssetType": "SQL Server Table"
+			,"Description": "A table within a financial database with the latest plan information"
+			,"Link": {
+				"Type":"database server:schema",
+				"Connection":"SQL Server"
+			}
+			,"DataAssetCollections": "Alex's Resource Group"
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Forecast"
+				,"Relationship": "Table in same schema"
+				}
+			,"Data Custodian": "Darth Vader"
+			,"Data Generator": "Mickey Mouse"
+			,"Data Consumer": "Tony Stark"
+			}
+		]
+	}
+	,
+	{
+	"Data Asset Collection Name": "Global FP&A main resources"
+	,"Data Asset Owner Name": "Tom Cat"
+	,"Data Asset Collection Purpose": "Collection of FP&A Resources"
+	,"Data Asset(s)":  
+			[
+			{
+				"Primary Title": "Financial Report"
+				,"Title Aliases": ["Compass", "Finance Dashboard"]
+				,"DataAssetType": "Power BI Report"
+				,"Description": "A generic Power BI report design to achieve XYZ for global FP&A"
+				,"Link": {
+					"Type":"www.fakeurlals1324fdkjas1234.com",
+					"Connection":"URL"
+				}
+				,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+				,"Communites": "Finance"
+				,"Related to" : 
+					{
+					"Name": "Finance Data Cube"
+					,"Relationship": "input dataset"
+					}
+				
+				,"Data Custodian": "Tom Cat"
+				,"Data Generator": "Jerry Mouse"
+				,"Data Consumer": "Bugs Bunny"
+			}
+				,
+			{
+				"Primary Title": "Finance Data Cube"
+				,"Title Aliases": "Finance Reporting data"
+				,"DataAssetType": "SSL Data Cube"
+				,"Description": "A data cube used to report downstream reports"
+				,"Link": {
+					"Type":"database server/schema",
+					"Connection":"DB Credentials"
+				}
+				,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+				,"Communites": "Finance"
+				,"Related to" : 
+					{
+					"Name": "Financial Report"
+					,"Relationship": "output report"
+					}
+				
+				,"Data Custodian": "Jerry Mouse"
+				,"Data Generator": "Tom Cat"
+				,"Data Consumer": "Mr. Burns"
+			}
+			,
+			{
+				"Primary Title": "Finance Data Cube"
+				,"Title Aliases": "Finance Reporting data"
+				,"DataAssetType": "SSL Data Cube"
+				,"Description": "A data cube used to report downstream reports"
+				,"Link": {
+					"Type":"database server:schema",
+					"Connection":"SQL Server"
+				}
+				,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+				,"Communites": "Finance"
+				,"Related to" : 
+					{
+					"Name": "Financial Report"
+					,"Relationship": "output report"
+					}
+				
+				,"Data Custodian": "Jerry Mouse"
+				,"Data Generator": "Tom Cat"
+				,"Data Consumer": "Mr. Burns"
+			}
+			]			
+	}
+	,
+	{
+	"Data Asset Collection Name": "CN34"
+	,"Data Asset Owner Name": "Ned Flanders"
+	,"Data Asset Collection Purpose": "Collating data assets around made up molecule CN34"
+	,"Data Asset(s)":  
+	[
+		{
+			"Primary Title": "early stage molecule stability test cn34"
+			,"Title Aliases": ["cn34 results","stability test data cn34"]
+			,"DataAssetType": "Parquet"
+			,"Description": "Stability test results for cn34"
+			,"Link": {
+				"Type":"Resource Group:Resource",
+				"Connection":"Azure Blob Storage"
+			}
+			,"DataAssetCollections": "CN34"
+			,"Communites": "VMRD"
+			,"Related to" : 
+				{
+				"Name": "CN34 Peak Data"
+				,"Relationship": "Molecule"
+				}
+			,"Data Custodian": "Marge Simpson"
+			,"Data Generator": "Homer J"
+			,"Data Consumer": "Ned Flanders"
+		}
+		,
+		{
+			"Primary Title": "CN34 Peak Data"
+			,"Title Aliases": ["cn34 peaks","HPLC cn34","cn34 chromatography"]
+			,"DataAssetType": "Parquet"
+			,"Description": "HPLC test results for cn34"
+			,"Link": {
+				"Type":"Resource Group:Resource",
+				"Connection":"Azure Blob Storage"
+			}
+			,"DataAssetCollections": "CN34"
+			,"Communites": "VMRD"
+			,"Related to" : 
+				{
+				"Name": "early stage molecule stability test cn34"
+				,"Relationship": "Molecule"
+				}
+			,"Data Custodian": "Marge Simpson"
+			,"Data Generator": "Homer J"
+			,"Data Consumer": "Ned Flanders"
+		}	
+	]
+			
+	}
+	,
+	{
+	"Data Asset Collection Name": "GMS SAP"
+	,"Data Asset Owner Name": "Bruce Banner"
+	,"Data Asset Collection Purpose": "I'm collecting records on batch manufacturing based on an SAP report in Zoetis"
+	,"Data Asset(s)":  
+		[	
+			{
+				"Primary Title": "BT-900"
+				,"Title Aliases": ["Batch Report","Batch Output Processing"]
+				,"DataAssetType": "SAP Report"
+				,"Description": "An SAP report detailing batches produced across all plants"
+				,"Link": {
+					"Type":"SAP Report Code",
+					"Connection":"SAP Report"
+				}
+				,"DataAssetCollections": "GMS SAP"
+				,"Communites": "GMS"
+				,"Related to" : 
+					{
+					"Name": "Batch Processing Table"
+					,"Relationship": "Same Source"
+					}
+				,"Data Custodian": "Tony Stark"
+				,"Data Generator": "Bruce Banner"
+				,"Data Consumer": "Peter Parker"
+			}
+		,
+			{
+				"Primary Title": "Batch Processing Table"
+				,"Title Aliases": ["Batch Report","Batch Output Processing"]
+				,"DataAssetType": "SQL Server Table"
+				,"Description": "An SAP table detailing batches produced across all plants"
+				,"Link": {
+					"Type":"SAP Report Code",
+					"Connection":"SAP Report"
+				}
+				,"DataAssetCollections": "GMS SAP"
+				,"Communites": "GMS"
+				,"Related to" : 
+					{
+					"Name": "BT-900"
+					,"Relationship": "Same Source"
+					}
+				,"Data Custodian": "Thor Odenson"
+				,"Data Generator": "Bruce Banner"
+				,"Data Consumer": "Peter Parker"
+			}	
+		,
+			{
+				"Primary Title": "BatchTable_tx900_23"
+				,"Title Aliases": ""
+				,"DataAssetType": "SAP Table"
+				,"Description": "An SAP report detailing batches produced across all plants"
+				,"Link": {
+					"Type":"SAP Report Code",
+					"Connection":"SAP Report"
+				}
+				,"DataAssetCollections": "GMS SAP"
+				,"Communites": "GMS"
+				,"Related to" : 
+					[{
+					"Name": "Batch Processing Table"
+					,"Relationship": "Output"
+					},
+					{
+					"Name": "BT-900"
+					,"Relationship": "Output"
+					}]
+				,"Data Custodian": "Bruce Wayne"
+				,"Data Generator": "Clark Kent"
+				,"Data Consumer": "Bruce Banner"
+			}	
+		]			
+	}	
+	]
+}
