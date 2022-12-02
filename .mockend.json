@@ -1,9 +1,7 @@
 {
 	"Asset": {
-			"Primary_Title": { "string": {} },
-			"Title_Aliases": {
-				  "string": [
-					"Compass",
+			"Primary_Title": { "string": [
+					"Report",
 					"Finance Dashboard",
 					"Finance Reporting data",
 					"Finance Operational Metrics",
@@ -13,7 +11,47 @@
 					"cn34 peaks",
 					"HPLC cn34",
 					"cn34 chromatography"
-				  ]
-		}
+					"Batch Report",
+					"Batch Output Processing",
+					"",
+					"Batch Processing Table",
+					"BatchTable_tx900_23",
+					"BT-900",
+					"CN34 Peak Data",
+					"early stage molecule stability test cn34",
+					"Finance Plan",
+					"Finance Data Cube"
+				  ] },
+			"Title_Aliases": {
+				  "string": [
+					"Report",
+					"Finance Dashboard",
+					"Finance Reporting data",
+					"Finance Operational Metrics",
+					"Finance Plan Metrics",
+					"cn34 results",
+					"stability test data cn34",
+					"cn34 peaks",
+					"HPLC cn34",
+					"cn34 chromatography"
+					"Batch Report",
+					"Batch Output Processing",
+					"",
+					"Batch Processing Table",
+					"BatchTable_tx900_23",
+					"BT-900",
+					"CN34 Peak Data",
+					"early stage molecule stability test cn34",
+					"Finance Plan",
+					"Finance Data Cube"
+				  ]},
+		"DataAssetType": {
+				  "string": [
+		"Power BI Report",
+		"SSL Data Cube",
+		"SQL Server Table",
+		"Parquet",
+		"SAP Report"
+						  ]}
 }
 }
