@@ -1,5 +1,19 @@
 {
 	"Asset": {
-			"Primary_Title": { "string": {} }
+			"Primary_Title": { "string": {} },
+			"tag": {
+				  "string": [
+					"Compass",
+					"Finance Dashboard",
+					"Finance Reporting data",
+					"Finance Operational Metrics",
+					"Finance Plan Metrics",
+					"cn34 results",
+					"stability test data cn34",
+					"cn34 peaks",
+					"HPLC cn34",
+					"cn34 chromatography"
+				  ]
 		}
+}
 }
