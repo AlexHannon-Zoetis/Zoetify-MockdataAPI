@@ -1,7 +1,7 @@
 {
 	"Asset": {
 			"Primary_Title": { "string": {} },
-			"tag": {
+			"Title_Aliases": {
 				  "string": [
 					"Compass",
 					"Finance Dashboard",
