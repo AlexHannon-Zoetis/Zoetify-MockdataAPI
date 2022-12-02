@@ -1,14 +1,24 @@
 {
-  "Post": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
-    }
-  },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
-    }
-  }
+	"Asset":
+		{
+			"Primary Title": "Financial Report"
+			,"Title Aliases": ["Compass", "Finance Dashboard"]
+			,"DataAssetType": "Power BI Report"
+			,"Description": "A generic Power BI report design to achieve XYZ for global FP&A"
+			,"Link": {
+				"Type":"www.fakeurlals1324fdkjas1234.com"
+				,"Connection":"URL"
+			}
+			,"DataAssetCollections": ["Global FP&A main resources","Alex's Resource Group"]
+			,"Communites": "Finance"
+			,"Related to" : 
+				{
+				"Name": "Finance Data Cube"
+				,"Relationship": "input dataset"
+				}
+			
+			,"Data Custodian": "Tom Cat"
+			,"Data Generator": "Jerry Mouse"
+			,"Data Consumer": "Bugs Bunny"
+		}
 }
